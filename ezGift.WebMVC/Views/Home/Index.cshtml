@@ -7,22 +7,48 @@
 <div class="sub-body home-background">
     <!-- ORIGINAL. CHANGED APPROACH  - WAS IN _Layout
         -->
-    <div class="container body-content">
+    <!-- REMOVED class container -->
+    <div class="body-content">
 
+
+<!-- DELETE START -->
+        <!-- CHANGED 
         <div class="less-opacity colorbackground">
+            -->
+<!-- DELETE END -->
 
+
+        <!-- ADDED -->
+        <div>
+        <!-- CHANGED 
         <div class="jumbotron some-opacity">
+            -->
+
+
+        <div class="home-jumbotron some-opacity">
+            <!-- SPLIT THE DIV -->
+            <div class="index-container">
 
                 <h1>ezGift</h1>
                 <p class="lead">The perfect gift every time.</p>
+                <h5>Everybody loves a party.  But, sometimes the stress of gift giving can take some of the fun out of the celebration</h5>
+                <h5>We all want to bring a gift that will be loved. And we want to avoid the stress of finding that gift from the universe of possiblities - based on the guidance that, "Johnny likes dinosaurs."</h5>
+                <h5>Stop "creative" shopping. </h5>
+                <h5>Find that gift on ezGift.</h5>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <!--
                 <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
                 -->
+            <!-- MOVED THIS TO BELOW 
                 </div>
+                -->
 
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Create a Profile</h2>
+                        <h3>Create a Profile</h3>
                         <p>
                             Your profile is the first step to ensuring your special person will receive gifts they will love. From your Profile, you can create events and gift registries for your events.
                         </p>
@@ -34,7 +60,7 @@
 
                     </div>
                     <div class="col-md-4">
-                        <h2>Create Events</h2>
+                        <h3>Create Events</h3>
                         <p>Let your friends know the information about your special event. Create events for your special days to share with your family and friends.</p>
                         <p>
                             <a class="btn btn-primary" href='@Url.Action("Index", "RegistryEvent")'>
@@ -43,7 +69,7 @@
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Create Gift Registries</h2>
+                        <h3>Create Gift Registries</h3>
                         <p>Your family and friends will be thrilled to see the excitement in the eyes of your special person when they receive a perfect gift from their gift registry.</p>
                         <p>
                             <a class="btn btn-primary" href='@Url.Action("Index", "RegistryEvent")'>
@@ -53,11 +79,17 @@
                     </div>
                 </div>
 
+            <!--  ADDED FOR THE NEW DIV UNDER JUMBOTRON DIV -->
             </div>
-
-
+        <!-- MOVED TO HERE-->
         </div>
 
 
+         </div>
+
+
     </div>
+
+
+</div>
 
