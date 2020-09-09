@@ -15,14 +15,14 @@ namespace ezGift.WebMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Save time and be confident your gift will be loved.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "We're here to help you.";
 
             return View();
         }

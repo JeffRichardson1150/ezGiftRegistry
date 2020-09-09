@@ -8,6 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -24,7 +25,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("User Profiles", "Index", "UserProfile")</li>
+                        <li>@Html.ActionLink("User Profile", "Index", "UserProfile")</li>
                         <li>@Html.ActionLink("Events", "Index", "RegistryEvent")</li>
                     }
                     <li>@Html.ActionLink("About", "About", "Home")</li>
@@ -34,16 +35,33 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - ezGift</p>
-        </footer>
-    </div>
+    <!--FINAL STYLING-->
+<!--
+    
+    <div class="sub-body backgroundpic">
+-->
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+<!-- ORIGINAL. CHANGED APPROACH VIA INDEX.CSHTML
+        <div class="container body-content">
+    -->
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - ezGift</p>
+            </footer>
+    <!--
+        </div>
+    -->
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+    <!--
+    </div>
+    -->
+
+
 </body>
+
 </html>

@@ -7,14 +7,17 @@
     @*<a href="{!retailerUrl}" target="_blank"><span>Target</span></a>*@
     @*<a href="{!retailerUrl}" target="_blank"><span>Target</span></a>*@
     @*<a asp-route="targetroute" target="_blank"><span>Target</span></a>*@
-    <a asp-protocol="https" asp-route="targetroute"><span>Target</span></a>
+    @*<a asp-protocol="https" asp-route="targetroute"><span>Target</span></a>
     <a asp-action=""
    asp-controller=""
    asp-area=""
    asp-protocol="https"
-   asp-host="targetroute"><span>Target</span></a>
+   asp-host="targetroute"><span>Target</span></a>*@
 
         }
+<div class="sub-body detail-background">
+    <div class="small-jumbotron small-jumbotron-detail some-opacity">
+
 
         <h2>@ViewBag.Title</h2>
 
@@ -59,14 +62,17 @@
         <!--<p>
             <a href="http://www.Google.com" target="_blank"><span>Go to Google</span></a>
             <br />-->
-            @*<a href=ViewBag.Url target="_blank"><span>Target</span></a>*@
-            @*<a href=retailerUrl target="_blank"><span>Target</span></a>*@
-            <!--<a href=retailerUrl target="_blank"><span>Target</span></a>-->
-            @*<a href="https://www.target.com/p/marvel-spider-man-titan-hero-series-spider-man-12-34-action-figure/-/A-76623443" target="_blank"><span>Target</span></a>*@
+        @*<a href=ViewBag.Url target="_blank"><span>Target</span></a>*@
+        @*<a href=retailerUrl target="_blank"><span>Target</span></a>*@
+        <!--<a href=retailerUrl target="_blank"><span>Target</span></a>-->
+        @*<a href="https://www.target.com/p/marvel-spider-man-titan-hero-series-spider-man-12-34-action-figure/-/A-76623443" target="_blank"><span>Target</span></a>*@
         <!--</p>-->
-<p>
-    @*Html.ExternalLink("www.google.com", "Google")*@
-    @*@Html.ActionLink("URL 1", "GoToUrl", "GiftUrl", new { retailerUrl = "https://www.target.com" }, new { })*@
-    @Html.ActionLink("Edit", "Edit", new { id = Model.GiftId }) |
-    @Html.ActionLink("Back to List", "Index", new { id = Model.RegistryEventId })
-</p>
+        <p>
+            @*Html.ExternalLink("www.google.com", "Google")*@
+            @*@Html.ActionLink("URL 1", "GoToUrl", "GiftUrl", new { retailerUrl = "https://www.target.com" }, new { })*@
+            @Html.ActionLink("Edit", "Edit", new { id = Model.GiftId }) |
+            @Html.ActionLink("Back to List", "Index", new { id = Model.RegistryEventId })
+        </p>
+
+</div>
+</div>

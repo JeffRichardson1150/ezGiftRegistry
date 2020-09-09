@@ -3,76 +3,83 @@
 @{
     ViewBag.Title = "Event Details";
 }
+<div class="sub-body detail-background">
+    <div class="small-jumbotron small-jumbotron-detail some-opacity">
 
-<h2>@ViewBag.Title</h2>
 
-<div>
-    <h4></h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.RegistryEventId)
-        </dt>
+        <h2>@ViewBag.Title</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.RegistryEventId)
-        </dd>
+        <div>
+            <h4></h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistryEventId)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UserProfileId)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistryEventId)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.UserProfileId)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UserProfileId)
+                </dt>
 
-        <dt>
-            <!--
-                
-            @Html.DisplayNameFor(model => model.UserProfile.Name)
-            -->
-            Event Owner
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.UserProfileId)
+                </dd>
 
-        <dd>
+                <dt>
+                    <!--
+
+                    @Html.DisplayNameFor(model => model.UserProfile.Name)
+                    -->
+                    Event Owner
+                </dt>
+
+                <dd>
+
             @Html.DisplayFor(model => model.UserProfile.Name)
-        </dd>
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.RegistryEventTitle)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistryEventTitle)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.RegistryEventTitle)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistryEventTitle)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.RegistryEventDescription)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistryEventDescription)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.RegistryEventDescription)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistryEventDescription)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EventLocation)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.EventLocation)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.EventLocation)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.EventLocation)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EventDate)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.EventDate)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.EventDate)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.EventDate)
+                </dd>
 
-    </dl>
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.RegistryEventId }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.RegistryEventId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+</div>

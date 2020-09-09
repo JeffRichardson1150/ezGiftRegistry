@@ -3,8 +3,103 @@
     padding-bottom: 20px;
 }
 
+.sub-body {
+    min-width: 80vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    /*min-height: 1vh;*/
+}
+
+.home-background {
+    background-image: url("https://images.pexels.com/photos/842876/pexels-photo-842876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.colorbackground {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.less-opacity{
+    opacity: .7;
+}
+.some-opacity {
+    opacity: .85;
+}
+
+.paddingLR {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-background {
+    background-image: url("https://images.pexels.com/photos/749344/pexels-photo-749344.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.gift-background {
+    background-image: url("https://images.pexels.com/photos/159823/kids-girl-pencil-drawing-159823.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.userprofile-background {
+    background-image: url("https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.event-background {
+    background-image: url("https://images.pexels.com/photos/1679825/pexels-photo-1679825.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.about-background {
+    background-image: url("https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact-background {
+    background-image: url("https://images.pexels.com/photos/3755618/pexels-photo-3755618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.detail-background {
+    background-image: url("https://images.pexels.com/photos/796607/pexels-photo-796607.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.edit-background {
+    background-image: url("https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.action-button {
+    background-color: blue;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
+/*    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;*/
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -22,3 +117,76 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.small-jumbotron-contact {
+    max-width: 30%;
+    margin-left: 50px;
+    position: absolute;
+    top: 25%;
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.small-jumbotron-detail {
+    top: 35%;
+    padding-left: 60px;
+}
+
+.hold {
+    position: absolute;
+    min-width: 60%;
+    left: 35%;
+    margin: -70px 0 0 -170px;
+}
+
+.small-jumbotron-edit {
+    min-width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: -70px 0 0 -170px;
+    padding-left: 80px;
+}
+
+.small-jumbotron {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*padding-right: 60px;*/
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+    border-radius: 6px;
+}
+
+    .small-jumbotron h1,
+    .small-jumbotron .h1 {
+        color: inherit;
+    }
+
+    .small-jumbotron p {
+        margin-bottom: 15px;
+        font-size: 21px;
+        font-weight: 200;
+    }
+
+    .small-jumbotron > hr {
+        border-top-color: #d5d5d5;
+    }
+
+
+
+
+
+
+
+
