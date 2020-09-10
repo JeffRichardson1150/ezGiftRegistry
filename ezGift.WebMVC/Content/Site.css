@@ -91,6 +91,13 @@
     background-size: cover;
 }
 
+.delete-background {
+    background-image: url("https://images.pexels.com/photos/1004112/pexels-photo-1004112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .edit-background {
     background-image: url("https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-repeat: no-repeat;
@@ -187,6 +194,15 @@ textarea {
 }
 
 .small-jumbotron-detail {
+    top: 35%;
+    padding-left: 60px;
+    position: absolute;
+    min-width: 60%;
+    left: 35%;
+    margin: -70px 0 0 -170px;
+}
+
+.small-jumbotron-delete {
     top: 35%;
     padding-left: 60px;
     position: absolute;

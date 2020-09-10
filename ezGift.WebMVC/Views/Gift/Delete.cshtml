@@ -4,53 +4,60 @@
     ViewBag.Title = "Delete Gift";
 }
 
-<h2>@ViewBag.Title</h2>
+<div class="sub-body delete-background">
+    <div class="small-jumbotron small-jumbotron-delete some-opacity">
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>GiftDetail</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.GiftId)
-        </dt>
+        <h2>@ViewBag.Title</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.GiftId)
-        </dd>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>GiftDetail</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.GiftId)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.RegistryEventId)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.GiftId)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.RegistryEventId)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistryEventId)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.GiftName)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistryEventId)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.GiftName)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.GiftName)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.GiftDescription)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.GiftName)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.GiftDescription)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.GiftDescription)
+                </dt>
 
-    </dl>
+                <dd>
+                    @Html.DisplayFor(model => model.GiftDescription)
+                </dd>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            @Html.ActionLink("Back to List", "Index", new { id = Model.RegistryEventId })
         </div>
-    }
+            }
+        </div>
+
+</div>
 </div>
